@@ -67,6 +67,8 @@ img {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1024px;
+    /* padding-left: 0;
+    padding-right: 0; */
   }
 }
 
@@ -117,7 +119,7 @@ img {
   position: relative;
 }
 
-.current::after {
+.header-nav-list-link:hover::after {
   display: block;
   width: 37px;
   height: 2px;
@@ -133,7 +135,7 @@ img {
   gap: 12px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .header-nav-list {
     display: none;
   }
@@ -254,4 +256,176 @@ img {
 
 .mobile-social-icon {
   fill: var(--secondary-cl-white);
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  max-width: 335px;
+  margin-top: 8px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 425px;
+  padding-bottom: 72px;
+  background-color: var(--main-cl-black);
+  text-align: center;
+  border-radius: 30px;
+  background-image: linear-gradient(
+      114deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../images/hero-bg/hero-bg_sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 704px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+    padding-top: 260px;
+    padding-left: 32px;
+    padding-bottom: 295px;
+    text-align: left;
+    background-image: linear-gradient(
+        114deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/hero-bg/hero-bg_md.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    max-width: 1152px;
+    margin-top: 16px;
+    margin-bottom: 96px;
+    padding-top: 164px;
+    padding-left: 64px;
+    padding-bottom: 163px;
+    background-image: linear-gradient(
+        114deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/hero-bg/hero-bg_lg.jpg");
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1279px),
+  screen and (min-resolution: 2dppx) and(max-width: 1279px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 1279px) {
+  .hero {
+    background-image: linear-gradient(
+        114deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/hero-bg/hero-bg_md@2x.jpg");
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and(max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        114deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/hero-bg/hero-bg_sm@2x.jpg");
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and(min-width: 1280px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+  .hero {
+    background-image: linear-gradient(
+        114deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/hero-bg/hero-bg_lg@2x.jpg");
+  }
+}
+
+.hero-heading {
+  width: 295px;
+  color: var(--secondary-cl-white);
+  font-family: Manrope;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-heading {
+    width: 564px;
+    color: var(--secondary-cl-white);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 32px;
+  }
+}
+
+.light-accent-cl {
+  color: #bee8cc;
+}
+
+.hero-button {
+  padding: 14px 78px;
+  border-radius: 12px;
+  border: transparent;
+  background-color: var(--accent-cl);
+  color: var(--secondary-cl-white);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button {
+    padding: 16px 64px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+}
+
+.scroll-down-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--secondary-cl-white);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-down-link {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.scroll-down-icon {
+  fill: var(--accent-cl);
 }
