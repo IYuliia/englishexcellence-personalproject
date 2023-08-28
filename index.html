@@ -5,11 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>englishexcellence.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="page-header">
+      <div class="page-header-container container">
+        <nav class="page-header-nav">
+          <a href="" class="header-logo link"
+            >english<span class="accent-color">excellence</span>.</a
+          >
+          <ul class="header-nav-list list">
+            <li class="header-nav-list-item">
+              <a href="" class="header-nav-list-link link current">About us</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="" class="header-nav-list-link link">Our lessons</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="" class="header-nav-list-link link">Teachers</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="" class="header-nav-list-link link">Reviews</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a href="" class="header-nav-list-link link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-list list">
+          <li class="header-social-item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="header-social-link link"
+              target="_blank"
+            >
+              <svg class="header-social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="header-social-link link"
+              target="_blank"
+            >
+              <svg class="header-social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="header-social-link link"
+              target="_blank"
+            >
+              <svg class="header-social-icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button
+          class="burger-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger-menu-icon" width="40" height="28">
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero-heading">
+            Discover the joy of learning
+            <span class="light-accent-cl">English</span> with us!
+          </h1>
+          <button class="hero-button" type="button" data-modal-open>
+            Leave an application
+          </button>
+          <a href="">
+            <svg class="scroll-down-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-scroll"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="mobile-menu-close-btn js-close-menu">
+        <svg
+          class="mobile-menu-close-btn-icon"
+          width="40"
+          height="40"
+          aria-label="modal window close icon"
+        >
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link current">About us</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">Our lessons</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">Teachers</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">Reviews</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-social-list list">
+        <li class="mobile-social-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="mobile-social-link link"
+            target="_blank"
+          >
+            <svg class="mobile-social-icon" width="28" height="28">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="mobile-social-link link"
+            target="_blank"
+          >
+            <svg class="mobile-social-icon" width="28" height="28">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="mobile-social-link link"
+            target="_blank"
+          >
+            <svg class="mobile-social-icon" width="28" height="28">
+              <use href="./images/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
